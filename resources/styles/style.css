@@ -160,14 +160,14 @@ body{
 }
 
 .gallery-photos .digital{
-    background-image: radial-gradient(transparent 20%, black), url("../../images/Digital/art_05.png");
+    background-image: radial-gradient(transparent 20%, black), url("../../images/Previews/Main/art_02_lq.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .gallery-photos .traditional{
-    background-image: radial-gradient(transparent 20%, black), url("../../images/Traditional/art_01.jpg");
+    background-image: radial-gradient(transparent 20%, black), url("../../images/Previews/Main/art_01_lq.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
