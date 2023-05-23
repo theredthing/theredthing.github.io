@@ -1,0 +1,161 @@
+*{
+    font-family: sans-serif;
+
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+    background-color: var(--secondary-c);    
+}
+
+.main{
+    width: 100%;
+    max-width: 90vw;
+}
+
+nav{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    
+    font-size: 32px;
+    padding: 24px 0;
+}
+
+nav a{
+    font-family: 'Edit Undo BRK';
+    text-decoration: none;
+}
+
+.gallery-title{
+    font-family: 'Silkscreen';
+}
+
+.gallery-title,
+nav a{
+    border: 2px solid var(--border-c);
+    background-color: var(--box-c);
+
+    color: var(--font-c);
+    padding: 6px 12px;
+}
+
+.container{
+    display: -webkit-box;
+    display: flex;
+    display: -ms-flexbox;
+
+    -ms-flexbox-wrap: wrap;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+
+    justify-content: space-around;
+}
+
+.container .picture{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0.4vw 0;
+
+    height: 480px;
+    width: 480px;
+}
+
+.container .picture img{
+    cursor: pointer;
+    object-fit: cover;
+
+    height: 480px;
+    width: 480px;
+}
+
+.container .picture:hover{
+    transition: cubic-bezier(0.07, 1.41, 0.82, 1.41) 0.2s;
+    transform: scale(1.02);
+}
+
+.popup-pic{
+    background: rgba(0, 0, 0, 0.9);
+
+    display: none;
+    position: fixed;
+    
+    left: 0;
+    top: 0;
+
+    height: 100%;
+    width: 100%;
+
+    z-index: 100;
+}
+
+.popup-pic span{
+    color: white;
+    cursor: pointer;
+
+    font-size: 40px;
+    font-weight: bolder;
+
+    position: absolute;
+    right: 10px;
+    top: 0;
+    
+    z-index: inherit;
+}
+
+.popup-pic img{
+    object-fit: cover;
+    position: absolute;
+
+    left: 50%;
+    top: 50%;
+
+    height: auto;
+    min-width: 640px;
+    max-width: 640px;
+
+    transform: translate(-50%, -50%);
+}
+
+footer{
+    padding: 12px;
+}
+
+footer p{
+    color: var(--font-c);
+    font-family: monospace;
+    text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+    nav{
+        font-size: 16px;
+    }
+
+    .container{
+        justify-content: space-around;
+    }
+
+    .container .picture{
+        margin: 0.8vw 0;
+        height: 360px;
+        width: 360px;
+    }
+
+    .container .picture img{
+        height: 360px;
+        width: 360px;
+    }
+
+    .popup-pic img{
+        min-width: 360px;
+        max-width: 360px;
+    }
+}
