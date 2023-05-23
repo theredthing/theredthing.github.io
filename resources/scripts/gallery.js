@@ -1,7 +1,7 @@
 document.querySelectorAll('.container .picture img').forEach(picture =>{
     picture.onclick = () => {
         document.querySelector('.popup-pic').style.display = 'block';
-        document.querySelector('.popup-pic img').src = picture.getAttribute('src');
+        document.querySelector('.popup-pic img').src = picture.getAttribute('data-src');
     }
 })
 
