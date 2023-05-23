@@ -192,7 +192,7 @@ body{
 }
 
 .commissions-box .picture img{
-    height: 780px;
+    height: auto;
     width: 780px;
 }
 
@@ -300,7 +300,20 @@ footer p{
     }
     
     .commissions-box .picture img{
-        height: auto;
         width: 360px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .content{
+        font-size: 14px;
+    }
+
+    .commissions-box .picture{
+        width: 320px;
+    }
+    
+    .commissions-box .picture img{
+        width: 320px;
     }
 }
