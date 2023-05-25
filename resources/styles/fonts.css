@@ -1,6 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Bebas+Neue');
-@import url('https://fonts.googleapis.com/css?family=Titillium+Web');
-
 @font-face {
     font-family: 'Silkscreen';
     src: url(../fonts/slkscrb.ttf);
@@ -9,14 +6,4 @@
 @font-face {
     font-family: 'Edit Undo BRK';
     src: url(../fonts/editundo.ttf);
-}
-
-@font-face {
-    font-family: 'BPdots';
-    src: url(../fonts/BPdots.otf);
-}
-
-@font-face {
-    font-family: 'BPdotsSquares';
-    src: url(../fonts/BPdotsSquareBold.otf);
 }
